@@ -43,14 +43,21 @@ document.getElementById('withdraw').addEventListener('click',function(){
     const previousWithdraw=document.getElementById('previous-withdraw');
     const previousWithdrawString=previousWithdraw.innerText;
     const previousWithdrawValue=parseFloat(previousWithdrawString);
+    
     //3.5-----------get the total withdraw
     const recentWithdraw=withdraw+previousWithdrawValue;
-    //3.6-------set the value
-    previousWithdraw.innerText=recentWithdraw;
+    
     //3.7----------update tHE banalce
     const banalceField=document.getElementById('balance');
     const Totalbalance=banalceField.innerText;
     const previousBalace=parseFloat(Totalbalance);
+    if(previousBalace<withdraw){
+        alert("This is too much");
+        return;
+    }
+    //3.6-------set the value
+    previousWithdraw.innerText=recentWithdraw;
+    
     const newBalance=previousBalace-recentWithdraw;
     banalceField.innerText=newBalance;
 
