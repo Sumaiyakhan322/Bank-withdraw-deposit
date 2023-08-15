@@ -19,6 +19,6 @@ document.getElementById('submit-btn').addEventListener('click',function(){
     // 1.5------clear the mail and password
     emailField.value='';
     passwordField.value='';
-
-
 })
+
+

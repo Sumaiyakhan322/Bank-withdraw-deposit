@@ -17,7 +17,7 @@
         <div class="grid lg:grid-cols-3 gap-10 mt-14 w-8/12 mx-auto">
           <div class="bg-red-400 p-8 rounded-lg space-y-3">
             <h3 class="text-3xl text-white font-bold">Deposit</h3>
-            <p class="text-3xl text-white">$00</p>
+            <p class="text-3xl text-white">$<span id="previous-deposit">00</span></p>
           </div>
 
           <div class="bg-pink-300 p-8 rounded-lg space-y-3">
@@ -27,19 +27,19 @@
 
           <div class="bg-blue-300 p-8 rounded-lg space-y-3">
             <h3 class="text-3xl text-white font-bold">Balance</h3>
-            <p class="text-3xl text-white">$1240</p>
+            <p class="text-3xl text-white">$<span id="balance">1240</span></p>
           </div>
         </div>
         <div class="grid lg:grid-cols-2 w-8/12 mx-auto gap-10 mt-20">
           <div class="bg-fuchsia-300 rounded-lg space-y-8 p-6">
             <h3 class="text-white text-2xl font-semibold">Please Deposit</h3>
             <div class="">
-              <input
+              <input id="deposit-value"
                 type="text"
                 placeholder="amount you want to deposit"
                 class="text-black block w-7/12 p-3 rounded-md mx-auto mb-4"
               />
-              <button
+              <button id="deposit-btn"
                 class="text-white bg-blue-700 px-6 py-3 rounded-md mx-auto block"
               >
                 Deposit
@@ -64,5 +64,6 @@
         </div>
       </section>
     </main>
+    <script src="./inside.js"></script>
   </body>
 </html>
