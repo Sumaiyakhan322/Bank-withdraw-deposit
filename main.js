@@ -11,7 +11,7 @@ document.getElementById('submit-btn').addEventListener('click',function(){
     const givenPasswordValue=passwordField.value;
     //1.4 ----validate if the password and email is correct or not 
     if(givenEmailValue==='sumu@gmail.com' && givenPasswordValue==='1234'){
-        console.log('gd');
+        window.location.href='inside.html'
     }
     else{
         alert('Please enter the correct email and password');
