@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank for deposit and withdraw</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <header>
+        <h1 class="text-center mt-8 text-5xl font-semibold">Welcome to <span class="text-red-800 font-bold">Our Bank</span></h1>
+    </header>
+    <main>
+        <section class="bg-purple-200 w-10/12 mx-auto mt-10 p-10 rounded-lg">
+            <h3 class="text-3xl font-semibold text-center">Please Login</h3>
+            <div>
+                <input id="correct-main" type="email" placeholder="Enter your email" class="block my-8 w-8/12 p-3 rounded-lg mx-auto">
+                <input id="correct-password" type="password" placeholder="Enter your password" class="block w-8/12 p-3 rounded-lg mx-auto">
+                <button class="mt-10 px-8 py-3 bg-blue-500 rounded-lg text-white block mx-auto font-medium hover:text-blue-500 hover:bg-white" id="submit-btn">Submit</button>
+            </div>
+        </section>
+    </main>
+
+
     <script src="./main.js"></script>
 </body>
 </html>
